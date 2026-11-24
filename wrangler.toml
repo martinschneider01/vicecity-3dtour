@@ -1,0 +1,8 @@
+# Cloudflare (Workers static assets): `npm run deploy` builds the site, with the
+# converted assets that exist only on the machine that has the game, and uploads dist/.
+name = "vicecity-3dtour"
+compatibility_date = "2026-11-24"
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"

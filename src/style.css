@@ -536,6 +536,12 @@ body.intro #ui {
     transform: rotate(360deg);
   }
 }
+.intro-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+}
 .intro-github {
   display: inline-flex;
   align-items: center;

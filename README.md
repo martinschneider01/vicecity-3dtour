@@ -4,6 +4,8 @@
 
 <h3 align="center">A 3D tour of the 2002 Vice City map, right in your browser</h3>
 
+<p align="center"><b><a href="https://vicecity-3dtour.martin-schneider01.workers.dev">▶ Try it online</a></b></p>
+
 ![Intro page](docs/screenshots/intro.png)
 
 ## Why
