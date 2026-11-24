@@ -1,0 +1,120 @@
+CONVERSION REPORT
+=================
+Instances read from IPLs ........... 9114
+Instances placed ................... 9063
+  exterior world ................... 8494  (1158 in the far pack, 7336 in 149 tiles)
+  interiors ........................ 569  (hotel: 64, mansion: 42, bank: 52, mall: 231, stripclub: 10, coffeeshop: 7, riflerange: 3, apartment: 7, police: 32, dirtring: 45, bloodring: 15, hotring: 15, malibu: 43, printworks: 3)
+Instances excluded ................. 51
+     20  cutscene set with no free-roam entrance (area 8: concert hall)
+         e.g. concerth29, concerth02, concerth03, concerth04, concerth05, concerth06
+     14  cutscene set with no free-roam entrance (area 6: lawyer's office)
+         e.g. lw_room_main, lw_lights, lw_palm1, lw_floor_opac, lw_rug, lw_shado
+     12  exact duplicate (same model, same position, same rotation)
+         e.g. newstandnew1, newstandnew4, newstandnew3, newstandnew5, newstandnew2, Streetlamp1
+      2  cutscene set with no free-roam entrance (area 9: recording studio)
+         e.g. recordingstudio, instruments
+      2  whole-island LOD (the game only shows it from the other island, instead of the individual LODs)
+         e.g. IslandLODmainland, IslandLODbeach
+      1  area -1 unknown to the game (never shown)
+         e.g. club_exterior07
+Scales ≠ 1 ignored ................. 489  (the game reads this field but does not apply it)
+
+Models converted ................... 3842  (2001470 vertices, 1460889 unique triangles; 2182524 triangles once instanced)
+Models missing or unreadable ....... 0
+
+LODs linked by name ................ 1097  (game rule: same name from the 4th character on)
+LODs linked by position ............ 4  (detailed model at the same spot, with a longer name)
+LODs linked by proximity ........... 9  (tree clusters and ground: fade out closer than 150 m)
+Large objects with no detailed model 58  (seabeds, lights, blimp... always shown)
+    of which named LOD: LODnetopa0
+LODs more than 50 m from their detailed model: 0
+LODs inheriting the hours of a day/night object: 2
+
+Unique textures .................... 5136  (4872 duplicates merged, 347 stretched to square)
+Texture classes .................... 32/bc1×323, 128/bc3×223, 64/bc1×1024, 128/bc1×1024, 32/bc3×10, 64/bc3×151, 256/bc1×1024, 256/bc3×142, 64/bc1×452, 256/bc1×357, 128/bc1×407
+Texture files ...................... 132 KTX2 files (0 encoded, 132 reused from cache)
+TXD dictionaries not found ......... 0
+Textures not found ................. 75  (referenced by a model but missing from its TXD;
+                                     the game then draws the face untextured, and so do we)
+    LH_PWInterior/pw_guillotine  ← pw_priint
+    LH_PWInterior2/black  ← pw_presrommshad
+    LH_PWInterior2/black2128  ← pw_presrommshad
+    LH_PWInterior2/black3128  ← pw_presrommshad
+    LH_PWInterior2/black4128  ← pw_presrommshad
+    LH_PWInterior2/black5128  ← pw_presrommshad
+    LODbuildws07/topwallac1_256  ← LODhbuild071
+    LODhaiti/Bow_Abattoir_Conc  ← LODgstoreext
+    LODhaiti/Grass_128HV  ← LODhaiblockc1
+    LODhaiti/alley256  ← LODitsnip, LODlhaitibuilding09
+    LODhaiti/huswin2562hi  ← LODhoose, LOD_houses27, LODfsthus
+    LODhaiti/parking256  ← LODtiroadbuild
+    LODhaiti/paveb256  ← LODTI1RD, LODlhaitibuilding09
+    LODhaiti/road2_256  ← LODTI1RD, LODtiroadbuild
+    LODhaiti/sjmnwin  ← LODhoose
+    LODhaiti/wall256hi  ← LODhitbuild1a
+    LODhaitibig/paveb256  ← LODtlehacoast05
+    LODhaitin/sjmblue4  ← LODuilding01
+    LODhaitin/sjmfad1  ← LODanahouse12
+    LODhaitin/whitewall256  ← LODanahouse12
+    LODhaitinbig/acflatswall2_256  ← LODlhaitibuilding06
+    LODhaitinbig/acmiddlewindow2_256  ← LODlhaitibuilding06
+    LODhaitinbig/alley256  ← LODlhaitibuilding06
+    LODhaitinbig/hatwall256hi  ← LODtimall
+    LODhaitinbig/lightwall256  ← LODitnewbt
+    LODhaitinbig/paveb256  ← LODharoada2, LODcoast06, LODitnewbt, LODlhaitibuilding06
+    LODhaitinbig/road2_256  ← LODuilding05, LODtibuilds
+    LODhaitinbig/sjmbrwn3  ← LODhaiblockc3
+    LODhaitinbig/sjmmwall3  ← LODitnewbt
+    LODhaitinbig/sjmn3  ← LODhaiblockc3
+    LODhaitinbig/sjmroof1  ← LODmiland027a
+    LODhaitinbig/sjmrufGRS256  ← LODtimall
+    LODhaitinbig/sjmshop6  ← LODl2
+    LODhavana/greywallc128  ← lodmiland171
+    LODnbeach/yellwall256  ← lodcbtwbrdge
+    LODnbeachbtbig/cidirt  ← LOD_hotel03
+    LODnbeachbtbig/hoteltall512  ← LOD_hotel03
+    LODnbeachbtbig/paleyell02_128  ← LOD_hotel03
+    LODnbeachwbig/concretegroundl1_256  ← LODldingground40
+    LODodrive/tallhousewall3_256  ← LODo_polgrnda12
+    LODodriveN/roof06L256  ← lodbighotel_nt, lodbighotel_dy
+    LODodriveN/winlight  ← lodhotel_windows
+    ap_seaplanprop/black64  ← ap_seahangstuft
+    buoy/black64  ← bouy
+    ci_LOD/LODci_roof  ← LODextertank
+    ci_LOD/alleywalla_256  ← LODscreening, LODscreening2
+    cop_fake_ext02/black  ← cop_fake_ext03
+    cop_fake_ext03/llodoghtwall4bifhot  ← cop_fake_ext01
+    drycleaners/dryclean_washer_gen  ← drycleaners
+    dt_LOD2/LODstadium_entrance_c  ← LODstadium_entrance
+    dt_LOD2/old_corugwal2_256  ← LODntoon_04_bit2
+    dynnewstnd/glass1  ← newsstand1
+    generic/white64  ← wshnrthroad20, wshnrthroad03, wshnrthroad10, wshnrthroad28
+    hot_roomtrans/white64  ← hot_trans1
+    islandmanext1/LODbuildws19_2  ← IslandLOD2
+    lh_taxi/black64  ← lh_icecream02
+    lh_taxi/wirefence  ← lh_icecream01
+    lhcabby/black64  ← lh_taxifirm01
+    lhmachine1m/Was_scrpyd_baler_stepfront  ← lh_crushers08
+    lhmachine1mn/Was_scrpyd_baler_stepfront  ← lh_crushers10
+    metal/Alumox64  ← bollardlight
+    metal/bluemetal  ← bin1
+    metal/dirtywhite  ← bollardlight
+    nbeach_lod/simplewall256  ← LODotel05
+    od_bighotel/lodwinlight  ← od_hotel_windows
+    od_bighotpool/beachwalkway  ← od_bighotpool2
+    od_hotels1/black  ← od_tides3_dy, od_majestic2c_nt
+    odnhotelblk/black  ← odn_majestic2x_nt, odn_majestic2x_dy, odn_beacon2_dy, odn_beacon2_nt
+    scarinterior/Untitled-1  ← scarinterior1
+    signs/roadsign01_128  ← noparkingsign1
+    star1/orangeLOD  ← Man4garagedoors
+    wshxreflod/beigereswin1_128  ← lodxrefhse1
+    xrefhotels/black  ← xod_beacon_dy, xod_macalpin_dy, xod_tides_dy, xod_leslie_dy…
+    xrefhotels/black5128  ← xod_majestic_nt
+    xrefhotels/neonh1  ← xod_leslie_nt
+
+Water .............................. 191 rectangles, levels 6
+Timecyc weathers ................... 7
+Radar .............................. 1024×1024 pixels
+Intro logo ......................... exported
+Player ............................. exported (idle_stance, run_player, sprint_civi, walk_player)
+Asset size ......................... geometry 23.8 MB (gzip), textures 29.7 MB (98.4 MB once in video memory)

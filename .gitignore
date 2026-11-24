@@ -1,0 +1,17 @@
+node_modules/
+*.log
+test-results/
+
+# The original game and everything derived from it: copyrighted by
+# Rockstar Games / Take-Two Interactive, they stay local and are never published.
+/originalgame/
+/public/assets/
+/public/assets.tmp/
+/public/intro.jpg
+/public/intro-2560.jpg
+/public/aerial.jpg
+/dist/
+/.cache/
+
+# Throwaway diagnostic screenshots
+/docs/screenshots/debug/
